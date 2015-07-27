@@ -1,0 +1,8 @@
+{
+    "predef": [
+        "require",
+        "console",
+        "module"
+    ],
+    "esnext": true
+}
