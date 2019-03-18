@@ -1,0 +1,40 @@
+{
+    "plugins": ["react", "prettier"],
+    "extends": ["prettier", "prettier/react", "eslint:recommended", "plugin:react/recommended"],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "globals": {
+        "Translator": true,
+        "eZ": true,
+        "Routing": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "classes": true,
+            "experimentalObjectRestSpread": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-const-assign": "warn",
+        "no-this-before-super": "warn",
+        "no-undef": "warn",
+        "no-unreachable": "warn",
+        "no-unused-vars": "warn",
+        "no-console": "off",
+        "constructor-super": "warn",
+        "valid-typeof": "warn",
+        "no-extra-semi": "error",
+        "no-extra-boolean-cast": "off",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "one-var-declaration-per-line": "error",
+        "jsx-quotes": ["error", "prefer-double"]
+    }
+}

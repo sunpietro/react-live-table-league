@@ -1,0 +1,31 @@
+.lt-row {
+    padding-left: 16px;
+    position: relative;
+
+    &:before {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        position: absolute;
+        top: 50%;
+        left: 3px;
+        transform: translateY(-50%);
+    }
+
+    &--is-up {
+        &:before {
+            content: '';
+            border-width: 8.7px 5px 0 5px;
+            border-color: red transparent transparent transparent;
+
+        }
+    }
+
+    &--is-down {
+        &:before {
+            content: '';
+            border-width: 0 5px 8.7px 5px;
+            border-color: transparent transparent green transparent;
+        }
+    }
+}
