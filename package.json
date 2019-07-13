@@ -6,7 +6,7 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-        "start": "webpack-dev-server --open 'Google Chrome' --mode development",
+        "start": "webpack-dev-server --mode development",
         "build": "webpack --mode production",
         "serve": "node server.js"
     },
